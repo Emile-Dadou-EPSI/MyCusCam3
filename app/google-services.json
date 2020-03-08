@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "955107413447",
+    "firebase_url": "https://gosecuri-64593.firebaseio.com",
+    "project_id": "gosecuri-64593",
+    "storage_bucket": "gosecuri-64593.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955107413447:android:001bb30963faa202c51de2",
+        "android_client_info": {
+          "package_name": "com.example.mycuscam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955107413447-298h8fr6djm095o9rb4hijqm6sf9hca7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA64DTUAFHx5T0heq5i0ixM8EjVibUP_4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955107413447-298h8fr6djm095o9rb4hijqm6sf9hca7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
