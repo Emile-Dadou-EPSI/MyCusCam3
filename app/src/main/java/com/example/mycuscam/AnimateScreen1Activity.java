@@ -1,6 +1,7 @@
 package com.example.mycuscam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +19,7 @@ public class AnimateScreen1Activity extends AppCompatActivity {
 
     // Hooks
     ImageView gosecu;
-    Button login;
+    CardView login;
 
     // ANimations
     Animation topAnimation, bottomAnimation;
@@ -34,7 +35,7 @@ public class AnimateScreen1Activity extends AppCompatActivity {
 
         // Hooks
         gosecu = findViewById(R.id.img1);
-        login = findViewById(R.id.btn);
+        login = findViewById(R.id.login);
 
         // set animations
         gosecu.setAnimation(topAnimation);
@@ -51,8 +52,11 @@ public class AnimateScreen1Activity extends AppCompatActivity {
     }
 
     private void changeActivity() {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, loginactivity.class);
         startActivity(i);
     }
 
+    public void loginAction(View view) {
+        changeActivity();
+    }
 }
