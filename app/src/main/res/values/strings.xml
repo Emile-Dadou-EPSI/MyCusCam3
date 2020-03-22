@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyCusCam</string>
+    <string name="firebaseresult">test</string>
 </resources>

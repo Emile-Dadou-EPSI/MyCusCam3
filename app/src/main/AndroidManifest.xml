@@ -4,28 +4,44 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.hardware.camera2.full" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/gosecuriicon"
         android:label="GoSecuri"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".loginactivity"></activity>
-        <activity android:name=".AnimateScreen1Activity">
+        <activity android:name=".Activities.ResultActivity"
+            android:parentActivityName=".Activities.MainActivity">
+
+        </activity>
+        <activity android:name=".Visu.loadingDialog2" />
+        <activity android:name=".Activities.onStartFirebase">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Activities.loginactivity" />
+        <activity android:name=".Activities.AnimateScreen1Activity" />
+        <activity android:name=".Activities.MainActivity2" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Visu.loadingDialog" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
     </application>
 
 </manifest>

@@ -1,19 +1,17 @@
-package com.example.mycuscam;
+package com.example.mycuscam.Activities;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+import com.example.mycuscam.R;
 
 public class AnimateScreen1Activity extends AppCompatActivity {
 
@@ -29,6 +27,7 @@ public class AnimateScreen1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.animate_screen1);
+
 
         topAnimation = AnimationUtils.loadAnimation(this, R.anim.top_animation);
         bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
